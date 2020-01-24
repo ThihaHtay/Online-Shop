@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">OnlineShop</string>
+    <string name="browse_by">BROWSE BY</string>
+    <string name="brand">BRAND</string>
+    <string name="lastest_arrivals">Lastest Arrivals</string>
+    <string name="upload">CAN\'T FIND WHAT YOU LOOKING FOR? SEARCH BY</string>
+    <string name="need">NEED HELP
+    CUSTOMER SERVICE</string>
+    <string name="popular">Popular Products</string>
+</resources>

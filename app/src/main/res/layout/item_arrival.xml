@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="300dp"
+    android:layout_margin="@dimen/dimen_4"
+    app:cardCornerRadius="@dimen/dimen_8">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_arrival"
+            android:layout_width="170dp"
+            android:layout_height="190dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_l_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_4"
+            android:textSize="@dimen/dimen_20"
+            app:layout_constraintLeft_toLeftOf="@id/img_arrival"
+            app:layout_constraintTop_toBottomOf="@id/img_arrival" />
+
+        <TextView
+            android:id="@+id/txt_l_product_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_16"
+            app:layout_constraintLeft_toLeftOf="@id/txt_l_product_name"
+            app:layout_constraintTop_toBottomOf="@id/txt_l_product_name" />
+
+        <TextView
+            android:id="@+id/txt_l_brand_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_16"
+            app:layout_constraintLeft_toLeftOf="@id/txt_l_product_id"
+            app:layout_constraintTop_toBottomOf="@id/txt_l_product_id" />
+
+        <RatingBar
+            android:id="@+id/ratingbar"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:numStars="5"
+            android:rating="3"
+            app:layout_constraintLeft_toLeftOf="@id/txt_l_brand_name"
+            app:layout_constraintTop_toBottomOf="@id/txt_l_brand_name" />
+
+        <TextView
+            android:id="@+id/txt_l_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/ratingbar"
+            app:layout_constraintTop_toBottomOf="@id/txt_l_brand_name" />
+
+        <TextView
+            android:id="@+id/txt_l_kyat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_8"
+            android:text="KS"
+            android:textSize="@dimen/dimen_16"
+            app:layout_constraintLeft_toRightOf="@id/txt_l_price"
+            app:layout_constraintTop_toBottomOf="@id/txt_l_brand_name" />
+
+        <TextView
+            android:id="@+id/txt_lold_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen_16"
+            app:layout_constraintLeft_toRightOf="@id/ratingbar"
+            app:layout_constraintTop_toBottomOf="@id/txt_l_price" />
+
+        <TextView
+            android:id="@+id/txt_old_kyat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KS"
+            app:layout_constraintLeft_toRightOf="@id/txt_lold_price"
+            app:layout_constraintTop_toBottomOf="@id/txt_l_kyat" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
